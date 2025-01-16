@@ -1,0 +1,8 @@
+<div *ngIf="mostrarSidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div [class.no-sidebar]="!mostrarSidebar">
+    <router-outlet></router-outlet>
+  </div>
+  
+<router-outlet />
